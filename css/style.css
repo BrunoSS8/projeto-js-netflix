@@ -21,3 +21,8 @@ header {
 header .logo img {
     max-width: 150px;
 }
+
+/* Descrição got */
+.got {
+    color: white;
+}
