@@ -223,3 +223,8 @@ header .logo img {
     filter: invert(1);
     max-width: 32px;
 }
+
+.calculo {
+    color: white;
+    margin: 110px;
+}
