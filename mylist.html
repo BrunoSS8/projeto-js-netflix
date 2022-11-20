@@ -27,17 +27,21 @@
     </header>
     <!--contagem de episodios utilizando DOM-->
     <div class="calculo">
-    <h1>Quantos episódios tem a série inteira?</h1>
+    <h1 id="titulo">Quantos episódios tem a série inteira?</h1>
     <input type="number" name="txtn1" id="txtn1"> x
     <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="calcular" onclick="multiplicacao()">
+    <input type="button" value="calcular" id="buttonCalcular" onclick="multiplicacao()">
     <div id="res">Resultado</div>
     </div>
 
-    <script>
+    <script>      
+
         function multiplicacao() {
+
         var tn1 = window.document.getElementById('txtn1')
-        var tn2 = window.document.querySelector('input#txtn2')
+        var tn2 = window.document.querySelector('#txtn2')
+        // Utilizei o nextElementSibling no tn2 para o backgroundColor do proximo elemento irmão se tornar vermelho.
+        tn2.nextElementSibling.style.backgroundColor = '#de0611'; 
         var res = window.document.getElementById('res')
         var n1 = Number(tn1.value)
         var n2 = Number(tn2.value)
