@@ -215,6 +215,89 @@ header .logo img {
     outline: none;
 }
 
+/*my list*/
+
+.mylistpage{
+    color: #fff;
+}
+
+.mylist-titulo{
+    margin: 120px 0px 10px 105px;
+}
+
+hr{
+    border-color: #de0611;
+    border-radius: 10px;
+    width: 82%; 
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
+
+.mylist-galeria{
+    display: flex;
+    flex-wrap: wrap;    
+    margin: 0 auto;
+    max-width: 1356px;
+    margin: 20px 100px 40px 100px;
+}
+
+.mylist-galeria > div{
+    flex: 1;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.mylist-galeria > div > img{
+    width: 95%;
+    border-radius: 5px;
+}
+
+.mylist-galeria > div:hover{
+    background-color: rgb(15, 15, 15);
+    color: #de0611;
+    transform: scale(1.5);
+    cursor: pointer;
+}
+
+.mylist-container-tabela{
+    flex: 1;
+}
+
+.mylist-table{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px 10px 20px 10px;
+    width: 83%;
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: rgb(21, 21, 21);
+    background-color: rgb(21, 21, 21);
+}
+
+.mylist-zero{
+    color: #6c6c6c;
+}
+
+.mylist-zero th:last-child{
+    color: #6c6c6c;
+    text-align: left;
+}
+
+.mylist-first{
+    width: 5%;
+    text-align: center;
+}
+
+.mylist-second{
+    width: 90%;
+}
+
+.mylist-third{
+    color:#de0611;
+    width: 5%;
+}
+
 .close {
     position: absolute;
     top: 30px;
