@@ -303,7 +303,7 @@ hr{
     top: 30px;
     right: 30px;
     cursor: pointer;
-    filter: invert(1);
+    filter: invert(1);  
     max-width: 32px;
 }
 
