@@ -352,3 +352,146 @@ hr{
         bottom: 30px;
     }
 }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html,
+  body {
+    height: 100vh;
+  }
+  
+  body {
+    background-color: #000000dc;
+    font-family: Roboto, Arial, sans-serif;
+  }
+  
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 45px;
+    letter-spacing: 1px;
+    margin: 90px ;
+    color: #de0611;
+  }
+  
+  form {
+    margin: 10px 0;
+    background-color: rgba(85, 83, 83, 0.829);
+    padding: 30px 25px;
+    border-radius: 5px;
+    overflow: hidden
+  }
+  
+  form .input-block {
+    margin-bottom: 20px;
+  }
+  
+  form .input-block label {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+  }
+  
+  form .input-block input {
+    width: 100%;
+    display: block;
+    margin-top: 8px;
+    padding: 7px;
+    font-size: 16px;
+    color: #000000;
+    border-radius: 2px;
+    border: 1px solid #000000;
+    outline-color: #000000;
+  }
+  
+  form .btn-login {
+    display: block;
+    min-width: 120px;
+    border: none;
+    background-color: #de0611;
+    color: white;
+    border-radius: 25px;
+    margin: auto;
+    padding: 7px;
+  }
+  
+  /* Aparição do Form */
+  
+  form {
+    overflow: hidden;
+    animation: fade 1.5s;
+  }
+  
+  form .input-block:nth-child(1){
+    animation: move 400ms;
+  }
+  
+  form .input-block:nth-child(2){
+    animation: move 400ms;
+    animation-delay: 100ms;
+    animation-fill-mode: backwards
+  }
+  
+  form .btn-login {
+    animation: move 400ms;
+    animation-delay: 250ms;
+    animation-fill-mode: backwards
+  }
+  
+  @keyframes move {
+    from {
+      opacity: 0;
+      transform: translateX(-35%);
+    } 
+    to {
+      opacity: 1;
+      transform: scale(1);
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    } 
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Quando clicar no botão, sumir com o form */
+  
+  .form-hide {
+    animation: down 500ms forwards;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1)
+  }
+  
+  @keyframes down {
+    0% {
+      transform: translateY(0)
+    }
+    50% {
+      transform: translateY(-5vh)
+    }
+    100% {
+      transform: translateY(100vh);
+    }
+  }
+  
+  /* Form NO-NO */
+  
+  .validate-error {
+    animation: nono 200ms linear, fade paused;
+    animation-iteration-count: 2
+  }
+  
+  
