@@ -5,3 +5,4 @@ function toggleVideo(){
     video.currentTime = 0;
     video.pause();
 }
+
