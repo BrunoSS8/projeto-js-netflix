@@ -86,13 +86,28 @@
     <div class="mylist-episodios">
         <div class="calculo">
             <h3 id="titulo">Quantos episódios tem a série inteira?</h3>
-                <input type="number" name="txtn1" id="txtn1"> x
-                <input type="number" name="txtn2" id="txtn2">
-                <input type="button" value="calcular" id="buttonCalcular" onclick="multiplicacao()">
+            <input type="number" name="txtn1" id="txtn1" class="mylist-form"> x
+            <input type="number" name="txtn2" id="txtn2" class="mylist-form">
+            <input type="button" value="calcular" id="buttonCalcular" onclick="multiplicacao()">
             <div id="res">Resultado</div>
         </div>
     </div>
-  
-    <script src='Javascript/main.js'></script>
+
+    <script>      
+
+        function multiplicacao() {
+
+        var tn1 = window.document.getElementById('txtn1')
+        var tn2 = window.document.querySelector('#txtn2')
+        // Utilizei o nextElementSibling no tn2 para o backgroundColor do proximo elemento irmão se tornar vermelho.
+        tn2.nextElementSibling.style.backgroundColor = '#de0611'; 
+        var res = window.document.getElementById('res')
+        var n1 = Number(tn1.value)
+        var n2 = Number(tn2.value)
+        var s = n1 * n2 
+        res.innerHTML = `O total de episódios da série é igual a ${s}`
+        }
+
+    </script>
 </body>
 </html>

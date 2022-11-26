@@ -302,12 +302,43 @@ hr{
 
 .mylist-episodios{
     flex: 1;
-    margin: 0px 0px 0px 105px;
+    margin: 30px 0px 30px 105px;
 }
 
 #titulo{
     color:#de0611;
     padding: 0px 0px 10px 0px;
+}
+
+#res{
+    margin: 15px 0px 30px 0px;
+}
+
+#buttonCalcular{
+    padding: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    border-style: none;
+    border-radius: 10px;
+    background-color:#aaaaaa;
+}
+
+#buttonCalcular:hover{
+    background-color:#fff;
+    color:#171717;
+}
+
+.mylist-form{
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    border-style: none;
+}
+
+.calculo{
+    border: solid 1.5px #de0611;
+    border-radius: 10px;
+    padding: 15px 15px 5px 15px;
+    width: 90%;
 }
 
 .close {
