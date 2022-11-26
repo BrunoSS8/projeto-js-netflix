@@ -217,11 +217,13 @@ header .logo img {
 
 /*my list*/
 
-.mylistpage{
+.mylist-body{
+    background: linear-gradient(#171717, #000000);
     color: #fff;
 }
 
 .mylist-titulo{
+    color: #fff;
     margin: 120px 0px 10px 105px;
 }
 
@@ -242,18 +244,18 @@ hr{
     margin: 20px 100px 40px 100px;
 }
 
-.mylist-galeria > div{
+.mylist-galeria > .mylist-div{
     flex: 1;
     text-align: center;
     border-radius: 5px;
 }
 
-.mylist-galeria > div > img{
+.mylist-galeria > .mylist-div > .mylist-img{
     width: 95%;
     border-radius: 5px;
 }
 
-.mylist-galeria > div:hover{
+.mylist-galeria > .mylist-div:hover{
     background-color: rgb(15, 15, 15);
     color: #de0611;
     transform: scale(1.5);
@@ -298,13 +300,20 @@ hr{
     width: 5%;
 }
 
+.mylist-episodios{
+    flex: 1;
+    margin: 0px 0px 0px 105px;
+}
+
+#titulo{
+    color:#de0611;
+    padding: 0px 0px 10px 0px;
+}
+
 .close {
-    position: absolute;
-    top: 30px;
-    right: 30px;
+    padding: 100px;
     cursor: pointer;
-    filter: invert(1);  
-    max-width: 32px;
+    filter: invert(1);
 }
 
 /* Responsivo */
@@ -358,24 +367,23 @@ hr{
     padding: 0;
   }
   
-  html,
-  body {
+  .body-login {
     height: 100vh;
   }
   
-  body {
+  .body-login {
     background-color: #000000dc;
     font-family: Roboto, Arial, sans-serif;
   }
   
-  section {
+  .form-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   
-  h1 {
+  .h1-login {
     font-size: 45px;
     letter-spacing: 1px;
     margin: 90px ;
@@ -422,7 +430,7 @@ hr{
     padding: 7px;
   }
   
-  /* Aparição do Form */
+/* Aparição do Form */
   
   form {
     overflow: hidden;
@@ -468,7 +476,7 @@ hr{
     }
   }
   
-  /* Quando clicar no botão, sumir com o form */
+ /* Quando clicar no botão, sumir com o form */
   
   .form-hide {
     animation: down 500ms forwards;
@@ -485,7 +493,7 @@ hr{
     100% {
       transform: translateY(100vh);
     }
-  }
+  } 
   
   /* Form NO-NO */
   

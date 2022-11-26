@@ -11,7 +11,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
     <script src='main.js'></script>
 </head>
-<body>
+<body class="mylist-body">
     <header>
         <a href="#" class="logo"><img src="imagens/logo.png"></a>
         <ul class="navigation">
@@ -27,24 +27,24 @@
     </header>
     <h1 class="mylist-titulo">Minha lista</h1><hr>
     <section class="mylist-galeria">
-        <div>
-            <img src="imagens/ft1.png" alt="cartaz de The Big Bang Theory">
+        <div class="mylist-div">
+            <img src="imagens/ft1.png" alt="cartaz de The Big Bang Theory" class="mylist-img">
             <h5>The Big Bang Theory</h5>
         </div>
-        <div>
-            <img src="imagens/ft2.png" alt="cartaz de Mulan">
+        <div class="mylist-div">
+            <img src="imagens/ft2.png" alt="cartaz de Mulan" class="mylist-img">
             <h5>Mulan</h5>
         </div>
-        <div>
-            <img src="imagens/ft3.png" alt="cartaz de Guardiões da Galaxia">
+        <div class="mylist-div">
+            <img src="imagens/ft3.png" alt="cartaz de Guardiões da Galaxia" class="mylist-img">
             <h5>Guardiões da Galaxia</h5>
         </div>
-        <div>
-            <img src="imagens/ft4.png" alt="cartaz de Game of Thrones">
+        <div class="mylist-div">
+            <img src="imagens/ft4.png" alt="cartaz de Game of Thrones" class="mylist-img">
             <h5>Game of Thrones</h5>
         </div>   
-        <div> 
-            <img src="imagens/ft5.png" alt="cartaz de A Viagem de Chihiro">
+        <div class="mylist-div"> 
+            <img src="imagens/ft5.png" alt="cartaz de A Viagem de Chihiro" class="mylist-img">
             <h5>A Viagem de Chihiro</h5>
         </div>
     </section>
@@ -83,12 +83,14 @@
     </div>
 
     <!--contagem de episodios utilizando DOM-->
-    <div class="calculo">
-            <h1 id="titulo">Quantos episódios tem a série inteira?</h1>
+    <div class="mylist-episodios">
+        <div class="calculo">
+            <h3 id="titulo">Quantos episódios tem a série inteira?</h3>
                 <input type="number" name="txtn1" id="txtn1"> x
                 <input type="number" name="txtn2" id="txtn2">
                 <input type="button" value="calcular" id="buttonCalcular" onclick="multiplicacao()">
-        <div id="res">Resultado</div>
+            <div id="res">Resultado</div>
+        </div>
     </div>
 
     <script>      
