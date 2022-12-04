@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Netflix login</title>
+    <link rel="stylesheet" href="./css/style.css" />
+
+  </head>
+  <header>
+    <a href="#" class="logo"><img src="imagens/logo.png"></a>
+    <ul class="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="mylist.html">My List</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
+    </ul>
+    <div class="search">
+        <input type="text" placeholder="Search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </div>
+</header>
+  <body class="body-login">
+    <section class="form-section">
+      <h1 class="h1-login">Registrar-se</h1>
+
+      <div class="form-wrapper">
+
+        <form>
+            
+                <div class="input-block">
+                  <label for="login-email">Email</label>
+                  <input type="email" class="form-control" maxlength="30" id="login-email" placeholder="ex. contato@htmlecsspro.com">
+                </div>
+                <div class="input-block">
+                  <label for="login-password">Senha</label>
+                  <input type="password" class="form-control" maxlength="16" id="login-password" placeholder="ex. 1234">
+                </div>
+                <div class="input-block">
+                    <label for="cep">CEP</label>
+                    <input type="text" class="form-control" maxlength="9" id="cep">
+                </div>
+                <div class="input-block">
+                    <label for="logradouro">Logradouro</label>
+                    <input type="text" class="form-control" id="logradouro">
+                </div>
+                <div class="input-block">
+                    <label for="bairro">Bairro</label>
+                    <input type="text" class="form-control" id="bairro">
+                </div>
+                <div class="input-block">
+                    <label for="localidade">Localidade</label>
+                    <input type="text" class="form-control" id="localidade">
+                </div>
+                <div class="input-block">
+                    <label for="uf">UF</label>
+                    <input type="text" class="form-control" id="uf">
+                </div>
+                <button type="submit" class="btn-login">Registrar</button>
+        </form>
+        
+      </div>
+    </section>
+
+      
+    </ul>
+
+    <script src="Javascript/main.js"></script>
+  </body>
+</html>
