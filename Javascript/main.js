@@ -53,3 +53,29 @@ cep.addEventListener("blur",(e)=>{
     })
     .catch(e => console.log('Deu Erro: '+ e,message))
 })
+
+//mylist
+
+$(document).ready( function() {
+        
+    $("#tbbt").click ( function() {
+        $(".mylist-second").append("<td>The Big Bang Theory</td>")
+    })
+
+    $("#mulan").click ( function() {
+        $(".mylist-second").append("<td>Mulan</td>")
+    })
+
+    $("#gdg").click ( function() {
+        $(".mylist-second").append("<td>Guardiões da Galaxia</td>")
+    })
+
+    $("#got").click ( function() {
+        $(".mylist-second").append("<td>Game of Thrones</td>")
+    })
+
+    $("#chihiro").click ( function() {
+        $(".mylist-second").append("<td>A Viagem de Chihiro</td>")
+    })
+
+});
