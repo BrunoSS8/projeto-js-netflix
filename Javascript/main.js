@@ -1,3 +1,4 @@
+// chamando uma função que ao clicar em trailer abre o vídeo e no close X fecha o video, sempre que fechar o vídeo ele abre no time 0)
 function toggleVideo(){
     const trailer = document.querySelector('.trailer');
     const video = document.querySelector('video');
