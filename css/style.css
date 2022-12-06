@@ -352,6 +352,12 @@ hr{
 
 .mylist-btn{
     margin: 0 auto;
+    position: relative;
+    width: 300px;
+    height: 40px;
+
+    left: 118px;
+    width: 100%;
 }
 
 .calculo{
