@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
 
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
-    <script src='main.js'></script>
+    <script src='Javascript/main.js'></script>
 </head>
 <body class="mylist-body">
     <header>
@@ -28,58 +28,41 @@
     </header>
     <h1 class="mylist-titulo">Minha lista</h1><hr>
     <section class="mylist-galeria">
-        <div class="mylist-div">
-            <img src="imagens/ft1.png" alt="cartaz de The Big Bang Theory" class="mylist-img" id="tbbt">
+        <div class="mylist-div" onclick="imageRow1()">
+            <img src="imagens/ft1.png" alt="cartaz de The Big Bang Theory" class="mylist-img">
             <h5>The Big Bang Theory</h5>
         </div>
-        <div class="mylist-div">
+        <div class="mylist-div" id="mylist-div2" onclick="imageRow2()">
             <img src="imagens/ft2.png" alt="cartaz de Mulan" class="mylist-img" id="mulan">
             <h5>Mulan</h5>
         </div>
-        <div class="mylist-div">
-            <img src="imagens/ft3.png" alt="cartaz de Guardiões da Galaxia" class="mylist-img" id="gdg">
+        <div class="mylist-div" id="mylist-div3" onclick="imageRow3()">
+            <img src="imagens/ft3.png" alt="cartaz de Guardiões da Galaxia" class="mylist-img">
             <h5>Guardiões da Galaxia</h5>
         </div>
-        <div class="mylist-div">
-            <img src="imagens/ft4.png" alt="cartaz de Game of Thrones" class="mylist-img" id="got">
+        <div class="mylist-div" id="mylist-div4" onclick="imageRow4()">
+            <img src="imagens/ft4.png" alt="cartaz de Game of Thrones" class="mylist-img">
             <h5>Game of Thrones</h5>
         </div>   
-        <div class="mylist-div"> 
-            <img src="imagens/ft5.png" alt="cartaz de A Viagem de Chihiro" class="mylist-img" id="chihiro">
+        <div class="mylist-div" id="mylist-div5" onclick="imageRow5()">
+            <img src="imagens/ft5.png" alt="cartaz de A Viagem de Chihiro" class="mylist-img">
             <h5>A Viagem de Chihiro</h5>
         </div>
     </section>
+
     <div class="mylist-container-tabela">
-        <table class="mylist-table">
+        <table class="mylist-table" id="listaFav">
             <tr class="mylist-zero">
+
+                <div class="mylist-btn">
+                    <input id="name" class="input-text" placeholder="Nome" type="text" required />
+                    <button onclick="adicionarRow()" class="btn-busca">Clique aqui</button>
+                </div>
+                
                 <th>✶</th>
-                <th>MEU RANKING DE FAVORITOS</th>
+                <th>MEUS FAVORITOS</th>
             </tr>
-            <tr id="classificacao">
-                <td class="mylist-first">1</td>
-                <td class="mylist-second">A viagem de Chihiro</td>
-                <td class="mylist-third">X</td>
-            </tr>
-            <tr id="classificacao">
-                <td class="mylist-first">2</td>
-                <td class="mylist-second">Game of Thrones</td>
-                <td class="mylist-third">X</td>
-            </tr>
-            <tr id="classificacao">
-                <td class="mylist-first">3</td>
-                <td class="mylist-second">Guardiões da Galaxia</td>
-                <td class="mylist-third">X</td>
-            </tr>
-            <tr id="classificacao">
-                <td class="mylist-first">4</td>
-                <td class="mylist-second">The Big Bang Theory</td>
-                <td class="mylist-third">X</td>
-            </tr>
-            <tr id="classificacao">
-                <td class="mylist-first">5</td>
-                <td class="mylist-second">Mulan</td>
-                <td class="mylist-third">X</td>
-            </tr>
+            
         </table>       
     </div>
 
@@ -93,22 +76,5 @@
             <div id="res">Resultado</div>
         </div>
     </div>
-
-    <script>      
-
-        function multiplicacao() {
-
-        var tn1 = window.document.getElementById('txtn1')
-        var tn2 = window.document.querySelector('#txtn2')
-        // Utilizei o nextElementSibling no tn2 para o backgroundColor do proximo elemento irmão se tornar vermelho.
-        tn2.nextElementSibling.style.backgroundColor = '#de0611'; 
-        var res = window.document.getElementById('res')
-        var n1 = Number(tn1.value)
-        var n2 = Number(tn2.value)
-        var s = n1 * n2 
-        res.innerHTML = `O total de episódios da série é igual a ${s}`
-        }
-
-    </script>
 </body>
 </html>

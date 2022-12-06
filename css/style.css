@@ -335,6 +335,25 @@ hr{
     border-style: none;
 }
 
+.input-text{
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    border-style: none;
+}
+
+.btn-busca{
+    padding: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    border-style: none;
+    border-radius: 10px;
+    background-color:#aaaaaa;
+}
+
+.mylist-btn{
+    margin: 0 auto;
+}
+
 .calculo{
     border: solid 1.5px #de0611;
     border-radius: 10px;

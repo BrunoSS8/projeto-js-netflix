@@ -6,19 +6,6 @@ function toggleVideo(){
     video.pause();
 }
 
-function multiplicacao() {
-
-    var tn1 = window.document.getElementById('txtn1')
-    var tn2 = window.document.querySelector('#txtn2')
-    // Utilizei o nextElementSibling no tn2 para o backgroundColor do proximo elemento irmão se tornar vermelho.
-    tn2.nextElementSibling.style.backgroundColor = '#de0611'; 
-    var res = window.document.getElementById('res')
-    var n1 = Number(tn1.value)
-    var n2 = Number(tn2.value)
-    var s = n1 * n2 
-    res.innerHTML = `O total de episódios da série é igual a ${s}`
-    }
-
 //Consultando API de CEP(viacep.com.br) com Fetch API
 const cep = document.querySelector("#cep")
 
@@ -56,26 +43,157 @@ cep.addEventListener("blur",(e)=>{
 
 //mylist
 
-$(document).ready( function() {
+function multiplicacao() {
+
+    var tn1 = window.document.getElementById('txtn1')
+    var tn2 = window.document.querySelector('#txtn2')
+    // Utilizei o nextElementSibling no tn2 para o backgroundColor do proximo elemento irmão se tornar vermelho.
+    tn2.nextElementSibling.style.backgroundColor = '#de0611'; 
+    var res = window.document.getElementById('res')
+    var n1 = Number(tn1.value)
+    var n2 = Number(tn2.value)
+    var s = n1 * n2 
+    res.innerHTML = `O total de episódios da série é igual a ${s}`
+}
+
+function imageRow1() {
+
+    const listItem = document.querySelector('.mylist-div')
+    
+    let table = document.getElementById("listaFav");
+    
+    let tableSize = table.rows.length;
+    let row = table.insertRow(tableSize); //Inserindo uma linha abaixo da Tabela
+    let cell1 = row.insertCell(0); //Inserindo as celulas da linha
+    let cell2 = row.insertCell(1);
+    let cell3 = row.insertCell(2);
+    
+    row.id = tableSize;
+    let btnCode = "<p class='mylist-third' onclick='removeToTable(this)'>X</p>";
+    
+    cell2.innerHTML = listItem.lastElementChild.textContent;
+    cell3.innerHTML = btnCode;
+    
+    return false;
+}
+
+function imageRow2() {
+    
+    const listItem = document.querySelector('#mylist-div2')
         
-    $("#tbbt").click ( function() {
-        $(".mylist-second").append("<td>The Big Bang Theory</td>")
-    })
+    let table = document.getElementById("listaFav");
+        
+    let tableSize = table.rows.length;
+    let row = table.insertRow(tableSize); //Inserindo uma linha abaixo da Tabela
+    let cell1 = row.insertCell(0); //Inserindo as celulas da linha
+    let cell2 = row.insertCell(1);
+    let cell3 = row.insertCell(2);
+        
+    row.id = tableSize;
+    let btnCode = "<p class='mylist-third' onclick='removeToTable(this)'>X</p>";
+        
+    cell2.innerHTML = listItem.lastElementChild.textContent;
+    cell3.innerHTML = btnCode;
+        
+    return false;
+}
 
-    $("#mulan").click ( function() {
-        $(".mylist-second").append("<td>Mulan</td>")
-    })
-
-    $("#gdg").click ( function() {
-        $(".mylist-second").append("<td>Guardiões da Galaxia</td>")
-    })
-
-    $("#got").click ( function() {
-        $(".mylist-second").append("<td>Game of Thrones</td>")
-    })
-
-    $("#chihiro").click ( function() {
-        $(".mylist-second").append("<td>A Viagem de Chihiro</td>")
-    })
-
-});
+function imageRow3() {
+    
+    const listItem = document.querySelector('#mylist-div3')
+    
+    let table = document.getElementById("listaFav");
+    
+    let tableSize = table.rows.length;
+    let row = table.insertRow(tableSize); //Inserindo uma linha abaixo da Tabela
+    let cell1 = row.insertCell(0); //Inserindo as celulas da linha
+    let cell2 = row.insertCell(1);
+    let cell3 = row.insertCell(2);
+    
+    row.id = tableSize;
+    let btnCode = "<p class='mylist-third' onclick='removeToTable(this)'>X</p>";
+    
+    cell2.innerHTML = listItem.lastElementChild.textContent;
+    cell3.innerHTML = btnCode;
+    
+    return false;
+}
+    
+function imageRow4() {
+    
+    const listItem = document.querySelector('#mylist-div4')
+        
+    let table = document.getElementById("listaFav");
+        
+    let tableSize = table.rows.length;
+    let row = table.insertRow(tableSize); //Inserindo uma linha abaixo da Tabela
+    let cell1 = row.insertCell(0); //Inserindo as celulas da linha
+    let cell2 = row.insertCell(1);
+    let cell3 = row.insertCell(2);
+        
+    row.id = tableSize;
+    let btnCode = "<p class='mylist-third' onclick='removeToTable(this)'>X</p>";
+        
+    cell2.innerHTML = listItem.lastElementChild.textContent;
+    cell3.innerHTML = btnCode;
+        
+    return false;
+}
+    
+function imageRow5() {
+    
+    const listItem = document.querySelector('#mylist-div5')
+            
+    let table = document.getElementById("listaFav");
+            
+    let tableSize = table.rows.length;
+    let row = table.insertRow(tableSize); //Inserindo uma linha abaixo da Tabela
+    let cell1 = row.insertCell(0); //Inserindo as celulas da linha
+    let cell2 = row.insertCell(1);
+    let cell3 = row.insertCell(2);
+            
+    row.id = tableSize;
+    let btnCode = "<p class='mylist-third' onclick='removeToTable(this)'>X</p>";
+            
+    cell2.innerHTML = listItem.lastElementChild.textContent;
+    cell3.innerHTML = btnCode;
+            
+    return false;
+}
+    
+function adicionarRow() {
+    
+    //Definindo as variaveis e recebendo os dados
+    let name =`<td class='mylist-second'>${document.getElementById('name').value}</td>`;
+    let table = document.getElementById("listaFav");
+        
+    let tableSize = table.rows.length //Calculando o tamanho da Tabela
+    let row = table.insertRow(tableSize); //Inserindo uma linha abaixo da Tabela
+    let cell1 = row.insertCell(0); //Inserindo as celulas da linha
+    let cell2 = row.insertCell(1);
+    let cell3 = row.insertCell(2);
+    
+    row.id = tableSize; //Adicionando o id no elemento a ser criado
+    
+    //Criando o codigo do botão para remover a linha
+    let btnCode = "<p class='mylist-third' onclick='removeToTable(this)'>X</p>";
+    
+    //Preenchendo as celulas da linha  
+    cell2.innerHTML = name;
+    cell3.innerHTML = btnCode;
+    
+    //Limpando os campos de inserção de dados
+    document.getElementById('name').value = "";
+    
+    //Retornando 'false' para impedir o reload da pagina
+    return false;
+}
+    
+function removeToTable(id){
+    
+    let row = id.parentNode.parentNode.id; //Pegando o id do avô do botão
+    row = document.getElementById(row); //Recebendo o elemento da linha pelo ID
+    row.parentNode.removeChild(row); //Removendo a linha
+    
+    return false;
+}
